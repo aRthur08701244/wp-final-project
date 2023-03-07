@@ -1,0 +1,51 @@
+type Query {
+  campus(campusName: String!): [Courses!]
+  course(campusName: String!, courseName: String!, profName: String!): Course!
+}
+
+type Mutation {
+  createCampus(campusName: String!): [Courses!]
+  createCourse(campusName: String!, courseName: String!, profName: String!, author: String!): Course!
+  createSemester(courseName: String!, profName: String!, semesterName: String!): Semester!
+  createChatBox(courseName: String!, profName: String!, semesterName: String!, chatboxName: String!): ChatBox!
+  createMessage(courseName: String!, profName: String!, semesterName: String!, chatboxName: String!, sender: String!, body: String!): Message!
+}
+
+type Subscription {
+  course(campusName: String!): Courses!
+  semester(courseName: String!): Semester!
+  chatbox(semesterName: String!): ChatBox!
+  message(chatboxName: String!): Message!
+}
+
+type Campus {
+  name: String!
+  courses: [Courses!]
+}
+
+type Courses {
+  name: String!
+  prof: String!
+  author: String!
+}
+
+type Course {
+  name: String!
+  prof: String!
+  semesters: [Semester!]
+}
+
+type Semester {
+  name: String!
+  chatboxes: [ChatBox!]
+}
+
+type ChatBox {
+  name: String!
+  messages: [Message!]
+}
+
+type Message {
+  sender: String!
+  body: String!
+}

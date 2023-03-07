@@ -1,0 +1,78 @@
+.
+├── Dockerfile
+├── README.md
+├── backend
+│   ├── package.json
+│   ├── src
+│   │   ├── db.js
+│   │   ├── index.js
+│   │   ├── models
+│   │   │   └── course.js
+│   │   ├── mongo.js
+│   │   ├── resolvers
+│   │   │   ├── Campus.js
+│   │   │   ├── ChatBox.js
+│   │   │   ├── Course.js
+│   │   │   ├── Courses.js
+│   │   │   ├── Mutation.js
+│   │   │   ├── Query.js
+│   │   │   ├── Semester.js
+│   │   │   └── Subscription.js
+│   │   ├── schema.graphql
+│   │   └── server.js
+│   ├── yarn-error.log
+│   └── yarn.lock
+├── frontend
+│   ├── README.md
+│   ├── eval.txt
+│   ├── package-lock.json
+│   ├── package.json
+│   ├── public
+│   │   ├── favicon.ico
+│   │   ├── index.html
+│   │   ├── logo192.png
+│   │   ├── logo512.png
+│   │   ├── manifest.json
+│   │   └── robots.txt
+│   ├── src
+│   │   ├── App.css
+│   │   ├── App.js
+│   │   ├── components
+│   │   │   ├── AddChatModal.js
+│   │   │   ├── AddCourseModal.js
+│   │   │   ├── ChatBox.js
+│   │   │   ├── CourseDescrip.js
+│   │   │   ├── ExtractChatbox.js
+│   │   │   ├── GoogleSignIn.js
+│   │   │   ├── Message.js
+│   │   │   ├── SemesterSide.js
+│   │   │   ├── Title.js
+│   │   │   ├── VideoChatRoom.js
+│   │   │   └── VideoRoom.js
+│   │   ├── containers
+│   │   │   ├── BrowseCourse.js
+│   │   │   ├── ChatRoom.js
+│   │   │   ├── CourseRoom.js
+│   │   │   ├── Dashboard.js
+│   │   │   ├── UserCourses.js
+│   │   │   └── hooks
+│   │   │       ├── displayMessage.js
+│   │   │       └── useDisplay.js
+│   │   ├── graphql
+│   │   │   ├── index.js
+│   │   │   ├── mutations.js
+│   │   │   ├── queries.js
+│   │   │   └── subscriptions.js
+│   │   ├── index.css
+│   │   ├── index.js
+│   │   └── logo.svg
+│   ├── tailwind.config.js
+│   └── yarn.lock
+├── output.doc
+├── package.json
+├── postcss.config.js
+├── tailwind.config.js
+├── yarn-error.log
+└── yarn.lock
+
+12 directories, 64 files

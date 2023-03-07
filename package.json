@@ -1,0 +1,17 @@
+{
+  "name": "WP-final-project",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/Aaron-Hsieh-0129/WP-final-project.git",
+  "author": "aRthur08701244 <kmes80214@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "cd frontend && yarn start",
+    "server": "cd backend && yarn server",
+    "install:prod": "cd frontend && yarn install --freeze-lockfile && cd ../backend && yarn install --freeze-lockfile",
+    "build": "cd frontend && yarn build",
+    "deploy": "cd backend && yarn deploy"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}
